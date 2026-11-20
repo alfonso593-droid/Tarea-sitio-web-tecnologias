@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" fill="#010135"/>
+  <!-- Barra de direcciones HTTPS -->
+  <rect x="120" y="50" width="560" height="52" rx="26" fill="#ffffff"/>
+  <rect x="140" y="64" width="22" height="24" rx="4" fill="#0096d3"/>
+  <path d="M144 64v-6a7 7 0 0 1 14 0v6" fill="none" stroke="#0096d3" stroke-width="4"/>
+  <text x="180" y="84" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" fill="#010135">https://sitio-seguro.ejemplo</text>
+  <!-- Escudo -->
+  <g transform="translate(400 280)">
+    <path d="M0-140l110 40v80c0 70-48 110-110 140C-62 70-110 30-110-20v-80z" fill="#01528a" stroke="#ffffff" stroke-width="6"/>
+    <rect x="-36" y="-30" width="72" height="56" rx="8" fill="#ffffff"/>
+    <path d="M-22-30v-18a22 22 0 0 1 44 0v18" fill="none" stroke="#ffffff" stroke-width="10"/>
+    <circle cx="0" cy="-4" r="8" fill="#010135"/>
+    <rect x="-3" y="0" width="6" height="14" fill="#010135"/>
+  </g>
+  <text x="400" y="440" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebc2">Seguridad en la web: HTTPS, actualizaciones y contraseñas seguras</text>
+</svg>

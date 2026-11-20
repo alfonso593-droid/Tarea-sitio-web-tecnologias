@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" fill="#eeebc2"/>
+  <!-- Tarjetas de producto -->
+  <g font-family="DejaVu Sans, Arial, sans-serif">
+    <g transform="translate(50 60)">
+      <rect width="170" height="210" rx="12" fill="#ffffff" stroke="#c7bfaa" stroke-width="3"/>
+      <rect x="15" y="15" width="140" height="100" rx="8" fill="#01528a"/>
+      <rect x="15" y="130" width="100" height="12" rx="4" fill="#01528a"/>
+      <rect x="15" y="152" width="60" height="10" rx="4" fill="#c7bfaa"/>
+      <rect x="15" y="176" width="80" height="22" rx="11" fill="#0096d3"/>
+    </g>
+    <g transform="translate(250 40)">
+      <rect width="170" height="210" rx="12" fill="#ffffff" stroke="#c7bfaa" stroke-width="3"/>
+      <rect x="15" y="15" width="140" height="100" rx="8" fill="#0096d3"/>
+      <rect x="15" y="130" width="100" height="12" rx="4" fill="#01528a"/>
+      <rect x="15" y="152" width="60" height="10" rx="4" fill="#c7bfaa"/>
+      <rect x="15" y="176" width="80" height="22" rx="11" fill="#0096d3"/>
+    </g>
+    <g transform="translate(450 60)">
+      <rect width="170" height="210" rx="12" fill="#ffffff" stroke="#c7bfaa" stroke-width="3"/>
+      <rect x="15" y="15" width="140" height="100" rx="8" fill="#c7bfaa"/>
+      <rect x="15" y="130" width="100" height="12" rx="4" fill="#01528a"/>
+      <rect x="15" y="152" width="60" height="10" rx="4" fill="#c7bfaa"/>
+      <rect x="15" y="176" width="80" height="22" rx="11" fill="#0096d3"/>
+    </g>
+    <!-- Carrito -->
+    <g transform="translate(640 150)" fill="none" stroke="#010135" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 0h28l18 80h70l14-56H34"/>
+      <circle cx="58" cy="112" r="10" fill="#010135"/>
+      <circle cx="108" cy="112" r="10" fill="#010135"/>
+    </g>
+    <!-- Tarjeta de pago -->
+    <g transform="translate(250 300)">
+      <rect width="170" height="100" rx="12" fill="#010135"/>
+      <rect y="20" width="170" height="20" fill="#c7bfaa"/>
+      <rect x="16" y="62" width="90" height="10" rx="4" fill="#ffffff" fill-opacity="0.8"/>
+      <rect x="16" y="80" width="50" height="8" rx="4" fill="#ffffff" fill-opacity="0.5"/>
+    </g>
+    <text x="450" y="340" font-size="22" font-weight="bold" fill="#010135">Compra en línea</text>
+    <text x="450" y="368" font-size="16" fill="#01528a">Catálogo, carrito y pago seguro</text>
+  </g>
+</svg>

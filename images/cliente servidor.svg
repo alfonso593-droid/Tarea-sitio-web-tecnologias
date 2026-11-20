@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" fill="#eeebc2"/>
+  <!-- Cliente: laptop -->
+  <g transform="translate(60 120)">
+    <rect x="0" y="0" width="190" height="125" rx="10" fill="#010135"/>
+    <rect x="12" y="12" width="166" height="101" rx="4" fill="#eeebc2"/>
+    <rect x="24" y="26" width="90" height="10" rx="3" fill="#01528a"/>
+    <rect x="24" y="46" width="140" height="8" rx="3" fill="#c7bfaa"/>
+    <rect x="24" y="62" width="120" height="8" rx="3" fill="#c7bfaa"/>
+    <rect x="24" y="82" width="50" height="18" rx="9" fill="#0096d3"/>
+    <path d="M-20 138h230l-18 22H-2z" fill="#01528a"/>
+    <text x="95" y="200" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="bold" fill="#010135">Cliente</text>
+    <text x="95" y="224" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#01528a">(navegador web)</text>
+  </g>
+  <!-- Servidor -->
+  <g transform="translate(550 90)">
+    <rect x="0" y="0" width="180" height="60" rx="8" fill="#010135"/>
+    <rect x="0" y="72" width="180" height="60" rx="8" fill="#010135"/>
+    <rect x="0" y="144" width="180" height="60" rx="8" fill="#010135"/>
+    <g fill="#0096d3">
+      <circle cx="22" cy="30" r="6"/><circle cx="22" cy="102" r="6"/><circle cx="22" cy="174" r="6"/>
+    </g>
+    <g fill="#01528a">
+      <rect x="44" y="22" width="110" height="16" rx="3"/>
+      <rect x="44" y="94" width="110" height="16" rx="3"/>
+      <rect x="44" y="166" width="110" height="16" rx="3"/>
+    </g>
+    <text x="90" y="240" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="bold" fill="#010135">Servidor web</text>
+    <text x="90" y="264" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#01528a">(Apache, Nginx, IIS...)</text>
+  </g>
+  <!-- Flechas -->
+  <defs>
+    <marker id="flecha" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#01528a"/>
+    </marker>
+    <marker id="flecha2" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#0096d3"/>
+    </marker>
+  </defs>
+  <line x1="290" y1="170" x2="510" y2="170" stroke="#01528a" stroke-width="4" marker-end="url(#flecha)"/>
+  <text x="400" y="158" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#01528a">Petición HTTP (request)</text>
+  <line x1="510" y1="230" x2="290" y2="230" stroke="#0096d3" stroke-width="4" marker-end="url(#flecha2)"/>
+  <text x="400" y="256" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#01528a">Respuesta HTTP (response)</text>
+  <text x="400" y="400" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#010135">Modelo cliente-servidor sobre el protocolo HTTP</text>
+</svg>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de contacto del sitio sobre el impacto de las tecnologías web.">
+  <title>Contacto | Impacto de las Tecnologías Web</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Encabezado con navegación común a todas las páginas -->
+  <header class="encabezado">
+    <div class="encabezado__contenido">
+      <p class="marca">Tecnologías Web</p>
+      <nav class="menu" aria-label="Menú principal">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="tecnologias.html">Tecnologías web</a></li>
+          <li><a href="sociedad.html">Sociedad</a></li>
+          <li><a href="negocios.html">Negocios</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <h1>Contacto</h1>
+    <p class="lead">¿Tiene comentarios o preguntas sobre el tema? Complete el formulario.</p>
+
+    <section aria-labelledby="titulo-form">
+      <h2 id="titulo-form">Formulario de contacto</h2>
+
+      <!-- Al enviar, se abre la página de confirmación (método GET) -->
+      <form action="gracias.html" method="get">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+        </div>
+
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" autocomplete="email" required>
+        </div>
+
+        <div class="campo">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto" required>
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+        </div>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+      <p class="nota">Todos los campos son obligatorios.</p>
+    </section>
+
+    <aside aria-labelledby="titulo-aside">
+      <h2 id="titulo-aside">Nota sobre el formulario</h2>
+      <p>
+        Este es un sitio estático: al enviar el formulario se abre una página de confirmación, pero el mensaje
+        no se almacena porque no hay programación del lado del servidor.
+      </p>
+    </aside>
+  </main>
+
+  <footer class="pie">
+    <p>Proyecto académico de Tecnologías Web · Unidades 2 y 3 (HTML5).</p>
+    <p>Elaborado en <time datetime="2026-11">noviembre de 2026</time>. Imágenes y video de elaboración propia.</p>
+    <p><a href="../index.html">Volver al inicio</a></p>
+  </footer>
+</body>
+</html>

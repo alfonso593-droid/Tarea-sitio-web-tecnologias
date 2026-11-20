@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cómo funciona la web: protocolo HTTP, servidores, lenguajes del cliente y del servidor, arquitectura en capas y seguridad.">
+  <title>Tecnologías web | Impacto de las Tecnologías Web</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Encabezado con navegación común a todas las páginas -->
+  <header class="encabezado">
+    <div class="encabezado__contenido">
+      <p class="marca">Tecnologías Web</p>
+      <nav class="menu" aria-label="Menú principal">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="tecnologias.html" aria-current="page">Tecnologías web</a></li>
+          <li><a href="sociedad.html">Sociedad</a></li>
+          <li><a href="negocios.html">Negocios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <h1>Tecnologías web: así funciona la web</h1>
+    <p class="lead">
+      Detrás de cada página que visitamos hay un conjunto de tecnologías que trabajan en conjunto:
+      un protocolo de comunicación, servidores, navegadores y lenguajes de programación.
+    </p>
+
+    <!-- Cliente, servidor y HTTP -->
+    <section aria-labelledby="titulo-http">
+      <h2 id="titulo-http">El modelo cliente-servidor y el protocolo HTTP</h2>
+      <article>
+        <h3>¿Cómo se comunican el navegador y el servidor?</h3>
+        <p>
+          El <strong>Hypertext Transfer Protocol (HTTP)</strong> es el protocolo para la transferencia de archivos
+          en la web. Su funcionamiento se basa en solicitudes y respuestas: el cliente (el navegador) envía una
+          petición y el servidor web responde con el estado de la operación y, si corresponde, el recurso solicitado.
+        </p>
+        <figure>
+          <img src="../images/cliente-servidor.svg" width="800" height="450"
+               alt="Un computador cliente envía una petición HTTP a un servidor web y recibe una respuesta HTTP">
+          <figcaption>Figura 1. Comunicación entre el cliente y el servidor mediante HTTP.</figcaption>
+        </figure>
+        <h4>Pasos de una comunicación web</h4>
+        <ol>
+          <li>El usuario escribe una dirección (URL) en el navegador.</li>
+          <li>El navegador envía una petición al servidor web.</li>
+          <li>El servidor ejecuta el código necesario y prepara la respuesta.</li>
+          <li>El servidor envía la respuesta y el navegador muestra la página.</li>
+        </ol>
+        <h4>Comandos básicos de HTTP</h4>
+        <dl>
+          <dt>GET</dt>
+          <dd>Solicita leer información del servidor.</dd>
+          <dt>HEAD</dt>
+          <dd>Solicita leer únicamente la cabecera de la respuesta.</dd>
+          <dt>POST</dt>
+          <dd>Envía información al servidor, por ejemplo, los datos de un formulario.</dd>
+        </dl>
+      </article>
+    </section>
+
+    <!-- Tabla de tecnologías -->
+    <section aria-labelledby="titulo-lenguajes">
+      <h2 id="titulo-lenguajes">Tecnologías del lado del servidor y del lado del cliente</h2>
+      <p>
+        Los lenguajes del lado del servidor se ejecutan en el servidor web y generan contenido dinámico.
+        Los del lado del cliente se ejecutan en el navegador y aportan interactividad.
+      </p>
+      <div class="tabla-responsive">
+        <table>
+          <caption>Algunas tecnologías web y su uso</caption>
+          <thead>
+            <tr>
+              <th scope="col">Tecnología</th>
+              <th scope="col">Lado</th>
+              <th scope="col">Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">PHP</th>
+              <td>Servidor</td>
+              <td>Lenguaje interpretado para programar páginas web que puede combinarse con código HTML.</td>
+            </tr>
+            <tr>
+              <th scope="row">Python</th>
+              <td>Servidor</td>
+              <td>Lenguaje interpretado de alto nivel y propósito general, de sintaxis sencilla y legible.</td>
+            </tr>
+            <tr>
+              <th scope="row">Node.js</th>
+              <td>Servidor</td>
+              <td>Entorno de ejecución que permite usar JavaScript fuera del navegador.</td>
+            </tr>
+            <tr>
+              <th scope="row">JavaScript</th>
+              <td>Cliente</td>
+              <td>Lenguaje basado en objetos y orientado a eventos; permite validar formularios y crear menús dinámicos.</td>
+            </tr>
+            <tr>
+              <th scope="row">TypeScript</th>
+              <td>Cliente</td>
+              <td>Superconjunto de JavaScript que añade tipado estático y se compila a JavaScript.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Arquitectura en capas -->
+    <section aria-labelledby="titulo-capas">
+      <h2 id="titulo-capas">Arquitectura de aplicaciones web</h2>
+      <article>
+        <h3>Modelo de tres capas</h3>
+        <p>
+          Las aplicaciones web modernas suelen organizarse en capas para separar responsabilidades y
+          facilitar la escalabilidad. La arquitectura más común es la de tres capas.
+        </p>
+        <h4>Capa de presentación</h4>
+        <p>Es la interfaz con la que interactúa la persona usuaria, ejecutada en el navegador.</p>
+        <h5>Tecnologías habituales</h5>
+        <p>HTML, CSS y JavaScript.</p>
+        <h6>Ejemplo</h6>
+        <p>Un formulario de contacto y su botón de envío.</p>
+        <h4>Capa de negocio</h4>
+        <p>Contiene la lógica de la aplicación y procesa las peticiones recibidas.</p>
+        <h4>Capa de datos</h4>
+        <p>Almacena y recupera la información, normalmente mediante una base de datos.</p>
+      </article>
+    </section>
+
+    <!-- Seguridad -->
+    <section id="seguridad" aria-labelledby="titulo-seguridad">
+      <h2 id="titulo-seguridad">Seguridad en los navegadores web</h2>
+      <figure>
+        <img src="../images/seguridad-web.svg" width="800" height="450"
+             alt="Escudo con un candado junto a una barra de direcciones que muestra una conexión HTTPS">
+        <figcaption>Figura 2. Las conexiones cifradas (HTTPS) protegen los datos que se envían por la web.</figcaption>
+      </figure>
+      <p>Algunas recomendaciones para mejorar la seguridad al navegar:</p>
+      <ul>
+        <li>Mantener el navegador siempre actualizado.</li>
+        <li>Usar extensiones confiables y mantenerlas al mínimo necesario.</li>
+        <li>Activar la navegación segura y los bloqueadores de rastreadores.</li>
+        <li>Configurar contraseñas seguras y autenticación multifactor.</li>
+        <li>Revisar los permisos concedidos a los sitios web.</li>
+        <li>Evitar ingresar datos personales en sitios no cifrados (HTTP).</li>
+      </ul>
+    </section>
+
+    <aside aria-labelledby="titulo-aside">
+      <h2 id="titulo-aside">Estándares web</h2>
+      <p>
+        Gracias a los estándares de la W3C, dispositivos con características de hardware y software muy distintas
+        pueden comunicarse y mostrar los mismos contenidos.
+      </p>
+    </aside>
+  </main>
+
+  <footer class="pie">
+    <p>Proyecto académico de Tecnologías Web · Unidades 2 y 3 (HTML5).</p>
+    <p>Elaborado en <time datetime="2026-11">noviembre de 2026</time>. Imágenes y video de elaboración propia.</p>
+    <p><a href="../index.html">Volver al inicio</a></p>
+  </footer>
+</body>
+</html>

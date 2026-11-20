@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" fill="#eeebc2"/>
+  <!-- Pantalla con video -->
+  <rect x="80" y="70" width="420" height="260" rx="14" fill="#010135"/>
+  <rect x="98" y="88" width="384" height="224" rx="6" fill="#eeebc2"/>
+  <circle cx="290" cy="195" r="48" fill="#01528a"/>
+  <path d="M276 170l44 25-44 25z" fill="#ffffff"/>
+  <rect x="98" y="296" width="384" height="8" fill="#c7bfaa"/>
+  <rect x="98" y="296" width="170" height="8" fill="#0096d3"/>
+  <path d="M40 346h500l-24 26H64z" fill="#01528a"/>
+  <!-- Birrete -->
+  <g transform="translate(560 100)">
+    <path d="M100 0L200 45 100 90 0 45z" fill="#010135"/>
+    <path d="M40 72v50q60 40 120 0V72L100 100z" fill="#01528a"/>
+    <line x1="190" y1="50" x2="190" y2="110" stroke="#c7bfaa" stroke-width="6"/>
+    <circle cx="190" cy="116" r="8" fill="#c7bfaa"/>
+  </g>
+  <!-- Libro -->
+  <g transform="translate(570 270)">
+    <path d="M0 10q50-24 100 0v90q-50-24-100 0z" fill="#ffffff" stroke="#0096d3" stroke-width="5"/>
+    <path d="M100 10q50-24 100 0v90q-50-24-100 0z" fill="#ffffff" stroke="#0096d3" stroke-width="5"/>
+  </g>
+  <text x="80" y="415" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="bold" fill="#010135">Educación en línea: aprender desde cualquier lugar</text>
+</svg>

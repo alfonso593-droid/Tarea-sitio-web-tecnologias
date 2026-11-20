@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio web sobre el impacto de las tecnologías web en la sociedad y en los negocios.">
+  <title>Inicio | Impacto de las Tecnologías Web</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Encabezado con navegación común a todas las páginas -->
+  <header class="encabezado">
+    <div class="encabezado__contenido">
+      <p class="marca">Tecnologías Web</p>
+      <nav class="menu" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="pages/tecnologias.html">Tecnologías web</a></li>
+          <li><a href="pages/sociedad.html">Sociedad</a></li>
+          <li><a href="pages/negocios.html">Negocios</a></li>
+          <li><a href="pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- Portada del sitio -->
+    <section class="portada" aria-labelledby="titulo-portada">
+      <div>
+        <h1 id="titulo-portada">Impacto de las Tecnologías Web en la Sociedad y los Negocios</h1>
+        <p class="lead">
+          La web cambió la forma en que nos comunicamos, aprendemos, trabajamos y hacemos negocios.
+          En este sitio se explica cómo funciona y qué efectos tiene en nuestra vida diaria.
+        </p>
+        <p><a href="pages/tecnologias.html">Comenzar a explorar</a></p>
+      </div>
+      <figure>
+        <img src="images/hero-web.svg" width="800" height="500"
+             alt="Ventana de navegador junto a un globo terráqueo con nodos conectados, que representa la web como red mundial">
+        <figcaption>La web: una red de documentos de hipertexto accesible desde cualquier lugar.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Introducción -->
+    <section aria-labelledby="titulo-intro">
+      <h2 id="titulo-intro">¿Por qué es importante la web?</h2>
+      <article>
+        <h3>Un sistema de documentos enlazados</h3>
+        <p>
+          La <strong>World Wide Web</strong> es un sistema de documentos de hipertexto o hipermedia enlazados
+          entre sí y accesibles desde Internet. A principios de la década de 1990, Tim Berners-Lee definió
+          el lenguaje <abbr title="HyperText Markup Language">HTML</abbr> para describir esos documentos.
+        </p>
+        <p>
+          Hoy la web es la base de servicios como la educación en línea, el comercio electrónico, la banca digital
+          y los trámites de gobierno, por lo que entender sus tecnologías es clave para cualquier profesional
+          de la información.
+        </p>
+        <h4>Ideas principales de este sitio</h4>
+        <ul>
+          <li>Cómo funcionan el protocolo HTTP, los servidores y los navegadores.</li>
+          <li>Qué cambios ha traído la web a la educación, la comunicación y los servicios públicos.</li>
+          <li>Cómo las empresas aprovechan la web para vender, atender y comunicarse con sus clientes.</li>
+          <li>Por qué la accesibilidad, la usabilidad y la seguridad son esenciales.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Tarjetas de navegación hacia las páginas secundarias -->
+    <section aria-labelledby="titulo-explora">
+      <h2 id="titulo-explora">Explora el sitio</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <img src="images/cliente-servidor.svg" width="800" height="450"
+               alt="Un computador cliente y un servidor intercambian peticiones y respuestas HTTP">
+          <h3>Tecnologías web</h3>
+          <p>HTTP, servidores, lenguajes del lado del cliente y del servidor, y arquitectura en capas.</p>
+          <p><a href="pages/tecnologias.html">Ver tecnologías web</a></p>
+        </article>
+        <article class="tarjeta">
+          <img src="images/educacion-digital.svg" width="800" height="450"
+               alt="Pantalla con un video, un birrete y un libro que representan la educación en línea">
+          <h3>Impacto en la sociedad</h3>
+          <p>Educación, comunicación, servicios públicos e inclusión digital.</p>
+          <p><a href="pages/sociedad.html">Ver impacto social</a></p>
+        </article>
+        <article class="tarjeta">
+          <img src="images/comercio-electronico.svg" width="800" height="450"
+               alt="Tarjetas de productos, un carrito de compras y una tarjeta de pago que representan el comercio electrónico">
+          <h3>Impacto en los negocios</h3>
+          <p>Comercio electrónico, servicios financieros digitales y presencia en línea.</p>
+          <p><a href="pages/negocios.html">Ver impacto en negocios</a></p>
+        </article>
+        <article class="tarjeta">
+          <img src="images/seguridad-web.svg" width="800" height="450"
+               alt="Un escudo con un candado y una barra de direcciones con HTTPS, que representan la seguridad web">
+          <h3>Seguridad y confianza</h3>
+          <p>Buenas prácticas para navegar y proteger los datos de las personas.</p>
+          <p><a href="pages/tecnologias.html#seguridad">Ver seguridad en la web</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section aria-labelledby="titulo-video">
+      <h2 id="titulo-video">Video: resumen del tema</h2>
+      <video controls preload="metadata" width="800" height="450" poster="images/poster-video.jpg">
+        <source src="videos/impacto-tecnologias-web.mp4" type="video/mp4">
+        <p>Su navegador no puede reproducir este video. Puede descargarlo desde
+          <a href="videos/impacto-tecnologias-web.mp4">este enlace</a>.</p>
+      </video>
+      <details>
+        <summary>Ver descripción del contenido del video</summary>
+        <p>
+          El video no tiene audio; presenta cinco escenas con texto en pantalla:
+        </p>
+        <ol>
+          <li><strong>Tecnologías web:</strong> conectan personas, ideas y oportunidades.</li>
+          <li><strong>Colaboración:</strong> la comunicación supera las distancias.</li>
+          <li><strong>Infraestructura:</strong> los servidores ponen servicios en línea.</li>
+          <li><strong>Sociedad y educación:</strong> el conocimiento puede llegar a más personas.</li>
+          <li><strong>Confianza digital:</strong> la seguridad y la inclusión son esenciales.</li>
+        </ol>
+      </details>
+    </section>
+
+    <!-- Ruta sugerida -->
+    <section aria-labelledby="titulo-ruta">
+      <h2 id="titulo-ruta">Ruta de lectura sugerida</h2>
+      <ol>
+        <li>Conocer cómo funciona la web en <a href="pages/tecnologias.html">Tecnologías web</a>.</li>
+        <li>Analizar sus efectos en <a href="pages/sociedad.html">Sociedad</a>.</li>
+        <li>Revisar las oportunidades en <a href="pages/negocios.html">Negocios</a>.</li>
+        <li>Enviar comentarios desde <a href="pages/contacto.html">Contacto</a>.</li>
+      </ol>
+    </section>
+
+    <!-- Contenido complementario -->
+    <aside aria-labelledby="titulo-aside">
+      <h2 id="titulo-aside">Para seguir aprendiendo</h2>
+      <p>
+        La W3C, organización independiente y neutral, desarrolla los estándares que permiten una web accesible,
+        interoperable y eficiente.
+      </p>
+      <ul>
+        <li><a href="https://www.w3.org/standards/" target="_blank" rel="noopener">Estándares web de la W3C (sitio externo)</a></li>
+        <li><a href="https://www.w3.org/WAI/standards-guidelines/es" target="_blank" rel="noopener">Estándares de accesibilidad de la W3C (sitio externo)</a></li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <footer class="pie">
+    <p>Proyecto académico de Tecnologías Web · Unidades 2 y 3 (HTML5).</p>
+    <p>Elaborado en <time datetime="2026-11">noviembre de 2026</time>. Imágenes y video de elaboración propia.</p>
+    <p><a href="#contenido">Volver arriba</a></p>
+  </footer>
+</body>
+</html>

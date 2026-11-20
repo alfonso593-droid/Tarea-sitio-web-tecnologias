@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#010135"/>
+      <stop offset="1" stop-color="#01528a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Ventana de navegador -->
+  <rect x="60" y="80" width="430" height="300" rx="14" fill="#ffffff"/>
+  <path d="M60 94a14 14 0 0 1 14-14h402a14 14 0 0 1 14 14v26H60z" fill="#eeebc2"/>
+  <circle cx="84" cy="100" r="6" fill="#c7bfaa"/>
+  <circle cx="104" cy="100" r="6" fill="#c7bfaa"/>
+  <circle cx="124" cy="100" r="6" fill="#0096d3"/>
+  <rect x="150" y="90" width="320" height="20" rx="10" fill="#ffffff"/>
+  <text x="166" y="105" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#01528a">https://www.ejemplo.com</text>
+  <rect x="84" y="142" width="200" height="22" rx="4" fill="#010135"/>
+  <rect x="84" y="176" width="380" height="10" rx="4" fill="#c7bfaa"/>
+  <rect x="84" y="196" width="340" height="10" rx="4" fill="#c7bfaa"/>
+  <rect x="84" y="226" width="110" height="90" rx="8" fill="#0096d3"/>
+  <rect x="210" y="226" width="110" height="90" rx="8" fill="#c7bfaa"/>
+  <rect x="336" y="226" width="110" height="90" rx="8" fill="#01528a"/>
+  <rect x="84" y="336" width="120" height="26" rx="13" fill="#010135"/>
+  <!-- Globo -->
+  <g transform="translate(610 250)" fill="none" stroke="#ffffff" stroke-width="3">
+    <circle r="110" fill="#01528a" fill-opacity="0.55"/>
+    <ellipse rx="48" ry="110"/>
+    <ellipse rx="95" ry="110" stroke-opacity="0.6"/>
+    <line x1="-110" y1="0" x2="110" y2="0"/>
+    <path d="M-100 -48q100 30 200 0" />
+    <path d="M-100 48q100 -30 200 0" />
+  </g>
+  <!-- Nodos de red -->
+  <g fill="#c7bfaa" stroke="#ffffff" stroke-width="2">
+    <circle cx="540" cy="190" r="9"/>
+    <circle cx="690" cy="170" r="9"/>
+    <circle cx="660" cy="330" r="9"/>
+    <circle cx="560" cy="310" r="9"/>
+  </g>
+  <g stroke="#c7bfaa" stroke-width="2" stroke-dasharray="6 5">
+    <line x1="540" y1="190" x2="690" y2="170"/>
+    <line x1="690" y1="170" x2="660" y2="330"/>
+    <line x1="660" y1="330" x2="560" y2="310"/>
+    <line x1="560" y1="310" x2="540" y2="190"/>
+  </g>
+  <text x="60" y="440" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff">La web conecta personas y negocios</text>
+</svg>
